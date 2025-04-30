@@ -13,7 +13,7 @@ function imc(){
         calcularIMC(){
             if (this.altura > 3) this.altura=this.altura/100
             const imc = this.peso/this.altura**2;
-            if (imc < 18.5 ) this.classificacao = "obesidade mórbida";
+            if (imc < 18.5 ) this.classificacao = "magro ou baixo";
             if (imc >= 18.5 &&  imc < 25 ) this.classificacao = "saudavel"
             if (imc >= 25 &&  imc < 30 ) this.classificacao = "sobrepeso"
             if (imc >= 30 &&  imc < 35 ) this.classificacao = "obesidade"
